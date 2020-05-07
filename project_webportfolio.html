@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>About Me</title>
+</head>
+
+<body>
+  
+  <header>
+
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+      <nav class="menu">
+          
+          <div class="menu-branding">
+            <div class="portrait"></div>
+          </div>
+        
+        <ul class="menu-nav">
+          <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"> <a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item current"> <a href="work.html" class="nav-link">Projects</a></li>
+          <li class="nav-item"> <a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+<!--Change Classes-->
+
+  <main id="proj">
+    <h1 class="lg-heading">
+      Personal  
+      <span class="text-secondary">Portfolio</span>
+      Website
+    </h1>
+    <h2 class="sm-heading">
+     What you are currently viewing has been built from scratch using HTML and CSS, it is currently being hosted on a raspberry pi
+    </h2>
+    
+    <div class="proj-info">
+      <img src="img/projects/project6.png" alt="John Doe" class="bio-image-ura">
+
+      <div class="bio">
+        <h3 class="text-secondary">About the Project
+          <span class="text-secondary"> </span>
+        </h3>
+        <p> Developed from sratch I built this website writing the HTML and CSS for it using sublime text 3 as my editor. A raspberry pi 4 was
+            configured as the host sever to provide hosting for the website running apache2 for web hosting. Further, a bash script was made to autmatically update the public IP address using GoDaddy’s API’s for DDNS.
+            <br>
+            <br>
+              <span class="text-socondary">HTML | CSS | Rasberry Pi 4 | Web Design </span> 
+              <a href="https://github.com/UrbanPistek/Portfolio_Website" target="_blank" class="button button-accent-proj">
+                Link to Github
+              </a>  
+            <br> </p>
+      </div>
+
+      <section>
+        <div>
+          <img src="img/projects/rasp_screen.png" alt="John Doe" class="rasp-image">
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <img src="img/projects/rasp_board.jpg" alt="John Doe" class="rasp-image">
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <img src="img/projects/web_image.png" alt="John Doe" class="rasp-image">
+        </div>
+      </section>
+
+    </div>
+  
+  </main>
+
+  <footer id="main-footer">
+    Copyright &copy; 2020
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>About Me</title>
+</head>
+
+<body>
+  
+  <header>
+
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+      <nav class="menu">
+          
+          <div class="menu-branding">
+            <div class="portrait"></div>
+          </div>
+        
+        <ul class="menu-nav">
+          <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"> <a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item current"> <a href="work.html" class="nav-link">Projects</a></li>
+          <li class="nav-item"> <a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+<!--Change Classes-->
+
+  <main id="proj">
+    <h1 class="lg-heading">
+      UWAFT EcoCar
+      <span class="text-secondary">Student Team</span>
+    </h1>
+    <h2 class="sm-heading">
+      Let me tell you a few things about the student team...
+    </h2>
+    
+    <div class="proj-info">
+      <img src="img/projects/project_uwaft.jpg" alt="John Doe" class="bio-image-uwaft">
+
+      <div class="bio">
+        <h3 class="text-secondary">About the Team</h3>
+        <p> The University of Waterloo EcoCAR Team is designing, building, and implementing advanced vehicle technologies into a 2019 Chevrolet Blazer. Advanced technologies include redesigning the powertrain to be HEV, SAE level 2 autonomy, and Carsharing. All while educating the public on hybrid electric vehicles. UWAFT is one of only two Canadian universities competing in the EcoCAR Mobility Challenge; making the competition even more of a unique and exciting experience.</p>
+      </div>
+    </div>
+
+    <!--Download File-->
+    <div class="icons">
+      <a href="files/Nomination for Excellence in Leadership Award - UWAFT.docx" download="Urban_Pistek_Resume" target="_blank" class="button button-accent">
+        Download My Excellence in Leadership Nomination
+      </a>
+    </div>
+
+      <h1 class="lg-heading">
+          Projects at
+          <span class="text-secondary">UWAFT</span>
+      </h1>
+      <h2 class="sm-heading">
+          Let me tell you about some of the things I have worked on...
+      </h2> 
+
+    <!--UWAFT Specific Mostly-->
+  <section>
+    <div class="proj-desc">
+      <div class="projdesc proj1">
+        <h3 class="proj-title">CAN Controlled Relay PCB</h3>
+        <h6 class="proj-skills">PCB Design | KiCAD | STM32 | Firmware</h6>
+        <p> Lead development of a custom PCB that regulates power components and systems by turning on/off relays to connect to the 12V power source. The PCB has a STM32 board stacked on it to provide the processing and GPIO capabilites along with a CAN transceiver to receive CAN messages and an CAN IC to convert the CAN message to SPI commincation to the STM32 board. The board is capable of controlling up to 15 different relays and was developed in KiCAD. Three boards were soldered by hand and tested using the CANalyzer software to send and receive CAN messages while using a testing harness to verify the relay functionality. </p>
+      <img src="img/projects/uwaft_pcb_layout.png" alt="John Doe" class="uwaft-image1">  
+      </div>
+    
+      <div class="projdesc proj2">
+        <h3 class="proj-title">HV & LV System Schematics</h3>
+        <h6 class="proj-skills">HV | LV | Schematic Design | VeSys | Harness Design</h6>
+        <p> Lead the development of vehicle schematics for the vehicle HV and LV systems; included was the HV powertrain system, HVIL (High Voltage Interlock Loop), radars and controllers, powertrain LV and the relay PCB. Schematics were designed using VeSys for all vehcile schematics and KiCAD for PCB layout. </p>
+      <img src="img/projects/uwaft_schematics.png" alt="John Doe" class="uwaft-image2">  
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="proj-desc">
+      <div class="projdesc proj1">
+        <h3 class="proj-title">Voltage Ripple Analysis</h3>
+        <h6 class="proj-skills">Matlab | Simulink | Vehicle Models</h6>
+        <p> Collected data from vehicle simulink model on HV battery current and voltage draw over time through various drive cycles. Utilized the data to examine the potiental voltage ripple on the electrical bus possible with the simulated electric powertrain. </p>
+      <img src="img/projects/uwaft_lv.png" alt="John Doe" class="uwaft-image3">  
+      </div>
+
+      <div class="projdesc proj2">
+        <h3 class="proj-title">CAN Override Tester</h3>
+        <h6 class="proj-skills">Arduino | C++ | Soldering | Electrical</h6>
+        <p> Developed a circuit using an Arduino Mega, CAN shield and passive components for a system that is capable of sending single CAN messages with different data bits that are configured by digital and analog input from the user via switches and potentiometers. The  CAN and Arduino were stacked using a prototyping sheild and all switches and LEDs were solder by hand on a custom laser cut box. </p>
+      <img src="img/projects/project_na.jpg" alt="John Doe" class="uwaft-image4">  
+      </div>
+    </div>
+  </section>
+   
+  </main>
+
+  <footer id="main-footer">
+    Copyright &copy; 2020
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
