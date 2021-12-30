@@ -402,6 +402,15 @@ section .container {
   margin-bottom: 0;
 }
 
+.about-me .highlight-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 5px -10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
