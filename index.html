@@ -28,6 +28,25 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru
+    const uluru = { lat: -25.344, lng: 131.036 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4, // 0 is no zoom
+      center: uluru,
+      mapTypeId: 'terrain'
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+  }
+</script>
+
 </head>
 
 <body>
@@ -311,7 +330,7 @@
 
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="count-box">
-            <i class="icofont-hill"></i>
+            <a href="#hiking" target="_blank"><i class="icofont-hill"></i></a>
             <span data-toggle="counter-up">44</span>
             <p>Mountains Summited</p>
           </div>
@@ -411,6 +430,13 @@
       </div>
 
     </div><!-- End Interests -->
+
+    <!-- ======= Adventures ======= -->
+      <br>
+      <div class="section-title">
+        <h2>Adventures</h2>
+      </div>
+      <a href="#hiking" target="_blank">Some of the Mountians I have summitted...</a>
 
     </div>
 
@@ -850,6 +876,21 @@
     </div>
   </section><!-- End Contact Section -->
 
+  <!-- ======= Mountains Section ======= -->
+  <section id="hiking" class="hiking">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Mountains</h2>
+        <p>Mountains I have summitted</p>
+      </div>
+
+      <!--The div element for the map -->
+      <div id="map"></div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -863,6 +904,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr1XzFLiVCfU5Gu0_TI4zGFxzk4azdB1Y&callback=initMap"
+    async>
+  </script>
 
 </body>
 

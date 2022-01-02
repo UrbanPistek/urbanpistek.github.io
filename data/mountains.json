@@ -1,0 +1,10 @@
+{
+	"poccatera_ridge":{
+		"name": "Poccaterra Rdige", 
+		"coords": {
+			"lat": 120,
+			"lon": -40
+		},
+		"elevation": 2631
+	}
+}
