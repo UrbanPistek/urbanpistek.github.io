@@ -394,7 +394,15 @@ function mapData(){
         lng: -114.8069311943257
       },
     elevation_m: 2210
-    }
+    },
+    prairie_mountain_ab:{
+      name: "Opal Ridge", 
+      coords: {
+          lat: 50.785922,
+          lng: -115.137083
+        },
+      elevation_m: 2575
+      }
   }
 
   return dataset; 
