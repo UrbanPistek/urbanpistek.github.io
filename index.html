@@ -29,6 +29,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <script src="./js/map.js"></script>
+  <script src="./node_modules/3d-force-graph/dist/3d-force-graph.js"></script>
 
 </head>
 
@@ -52,16 +53,16 @@
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Experience</a></li>
           <li><a href="#portfolio">Projects</a></li>
+		      <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
       <div class="social-links">
         <a href="https://www.linkedin.com/in/urbanpistek/" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a>
-        <!-- <a href="#" class="github"><i class="icofont-github"></i></a>
-        <a href="#" class="github"><i class="icofont-code-alt"></i></a> -->
         <a href="https://github.com/UrbanPistek" class="" target="_blank"><i class="fa fa-github"></i></a>
         <a href="https://gitlab.com/Urban_Pistek" class="" target="_blank"><i class="ri-gitlab-fill"></i></a>
+        <a href="https://medium.com/@urban.pistek" class="" target="_blank"><i class="fa fa-medium"></i></a>
         
         <form method="get" action="assets/files/Urban_Pistek_Resume.pdf" target="_blank">
           <button type="submit">Download Resume</button>
@@ -423,6 +424,9 @@
       </div>
       <a href="#hiking" target="_blank">Some of the Mountians I have summited...</a>
 
+      <!-- 3d graph placeholder -->
+      <!-- <div id="3d-graph" class="d-flex align-items-center justify-content-center"></div> -->
+
     </div>
 
   </section><!-- End About Section -->
@@ -588,34 +592,332 @@
             </ul>
             </p>
           </div>
-
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>Candidate for BASc in Mechatronics Engineering</h4>
-            <h5>2018 - 2023</h5>
-            <p><em>University of Waterloo, Waterloo, ON</em></p>
-            <p> Relevant Coursework:
-            <ul>
-              <li>Microprocessor Systems and Interfacing</li>
-              <li>Actuators and Power Electronics</li>
-              <li>Linear Systems and Signals</li>
-              <li>Computer Structure & Real-Time Systems</li>
-              <li>Sensors and Instrumentation</li>
-              <li>Data Structures and Algorithms</li>
-              <li>Digital Logic and Microprocessors</li>
-              <li>Digital Computation</li>
-              <li>Ordinary Differential Equations</li>
-              <li>Circuits</li>
-            </ul>
-            </p>
-          </div>
-
         </div>
         
       </div>
 
     </div>
   </section><!-- End Experience Section -->
+
+  
+  <!-- ======= Education Section ======= -->
+  <section id="education" class="about">
+    <div class="about-me container">
+
+      <div class="section-title">
+		  <h2>Education</h2>
+		<p>Here is a summary of my education...</p>
+      </div>
+
+    <div class="row">
+      <div class="col-lg-2" data-aos="fade-left">
+        <img src="assets/img/uw_seal.png" class="img-fluid" alt="" width="175" height="175">
+      </div>
+      <div class="col-lg-10 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <h3>Bachelor of Applied Science in Mechatronics Engineering</h3>
+        <p class="font-italic">
+          Univeristy of Waterloo | 2018 - 2023
+        </p>
+        <p>
+          "Mechatronics engineering is the design of computer-controlled electromechanical systems. 
+          The essence of it is that the design of the mechanical system must be performed together with 
+          the design of the electrical/electronic and computer control aspects that together, comprise a complete system.
+          
+          Mechatronics engineers use a multidisciplinary and systems-based approach to develop the “intelligent” 
+          electromechanical devices and integrated systems present in our daily lives -
+          including: smartphones, 3D printers, satellite systems, intelligent vehicle systems, wearable devices."
+        </p>
+        <p><em><a href="https://uwaterloo.ca/mechanical-mechatronics-engineering/undergraduate-students/future-students/what-is-mechatronics-engineering">-Waterloo</a></em></p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-lg-8 content">
+        <h3>Relevent Coursework</h3>
+      </div>
+    </div>
+		
+	  <div class="row">
+        <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <div class="highlight-title col-lg-6">
+            <h2><strong>Software Focused</strong></h2>
+          </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <ul>
+                  <li><i class="icofont-rounded-right"></i> Automatic Control Systems</li>
+                  <li><i class="icofont-rounded-right"></i> </li>
+                  <li><i class="icofont-rounded-right"></i> <strong>UWOrbital | </strong> Embedded Engineering | Electrical Power Systems</li>
+                </ul>
+              </div>
+            </div>
+          <div class="highlight-title col-lg-6">
+            <h2><strong>Electrical Focused</strong></h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <ul>
+                <li><i class="icofont-rounded-right"></i> <strong>Athos | </strong> Software Engineering Intern </li>
+                <li><i class="icofont-rounded-right"></i> <strong>Athos | </strong> Embedded Engineering Intern </li>
+                <li><i class="icofont-rounded-right"></i> <strong>IntelliCulture | </strong> Software Engineering Intern </li>
+                <li><i class="icofont-rounded-right"></i> <strong>UWAFT EcoCar Team | </strong> Electrical Engineering Lead</li>
+                <li><i class="icofont-rounded-right"></i> <strong>UW Robotics | </strong> Software Engineering Team Member</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Geotab | </strong> Automotive R&D Engineering Intern</li>
+                <li><i class="icofont-rounded-right"></i> <strong>University of Waterloo | </strong> Rsearch Assistant Intern</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+		
+        <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <div class="highlight-title col-lg-6">
+            <h2><strong>Mechanical Focused</strong></h2>
+          </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <ul>
+                  <li><i class="icofont-rounded-right"></i> Electromechanical Machine Desgin </li>
+                  <li><i class="icofont-rounded-right"></i> Fliud Mechanics</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>UWOrbital | </strong> Embedded Engineering | Electrical Power Systems</li>
+                </ul>
+              </div>
+            </div>
+          <div class="highlight-title col-lg-6">
+            <h2><strong>General</strong></h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <ul>
+				<li><i class="icofont-rounded-right"></i>Mechatronics Engineering Design</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Athos | </strong> Embedded Engineering Intern </li>
+                <li><i class="icofont-rounded-right"></i> <strong>IntelliCulture | </strong> Software Engineering Intern </li>
+                <li><i class="icofont-rounded-right"></i> <strong>UWAFT EcoCar Team | </strong> Electrical Engineering Lead</li>
+                <li><i class="icofont-rounded-right"></i> <strong>UW Robotics | </strong> Software Engineering Team Member</li>
+                <li><i class="icofont-rounded-right"></i> <strong>Geotab | </strong> Automotive R&D Engineering Intern</li>
+                <li><i class="icofont-rounded-right"></i> <strong>University of Waterloo | </strong> Rsearch Assistant Intern</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    </div>
+  </section><!-- End Experience Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+        <p>Here are some of my projects...</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-sw">Software</li>
+            <li data-filter=".filter-hw">Hardware</li>
+            <li data-filter=".filter-deep">Deep Learning</li>
+            <li data-filter=".filter-res">Research</li>
+            <li data-filter=".filter-mech">Mechanical</li>
+            <li data-filter=".filter-elec">Electrical</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-hw">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h3>CAN Enabled Relay Control PCB</h3>
+              <h4>Hardware</h4>
+              <div class="portfolio-links">
+                <a href="projects/proj-rcm.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details">
+                  <i class="bx bx-link"></i> Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-hw filter-sw filter-mech filter-elec">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-13.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h3>ATAT Robot</h3>
+              <h4>Hardware | Software | Mechanical</h4>
+              <div class="portfolio-links">
+                <a href="projects/proj-atat.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details">
+                  <i class="bx bx-link"></i> Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-sw filter-deep">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h3>Bluetooth Occupancy Detection CNN</h3>
+              <h4>Software | Deep Learning</h4>
+              <div class="portfolio-links">
+                <a href="projects/proj-ble-detect-cnn.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details">
+                  <i class="bx bx-link"></i> Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-hw">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h3>Relay Control & LV Diagnostics PCB</h3>
+              <h4>Hardware</h4>
+              <div class="portfolio-links">
+                <a href="projects/proj-rcm-lv-diag.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details">
+                  <i class="bx bx-link"></i> Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-hw">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h3>Lights and Switchs Indicator PCB</h3>
+              <h4>Hardware</h4>
+              <div class="portfolio-links">
+                <a href="projects/proj-ls-pcb.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details">
+                  <i class="bx bx-link"></i> Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-elec filter-mech">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h3>LV & HV Hybrid Electric Vehicle Electronic System Design</h3>
+              <h4>Electrical | Mechanical</h4>
+              <div class="portfolio-links">
+                <a href="projects/proj-uwaft.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details">
+                  <i class="bx bx-link"></i> Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-sw">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h3>Portfolio Website & Raspberry Pi Web Server</h3>
+              <h4>Software</h4>
+              <div class="portfolio-links">
+                <a href="projects/proj-website.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details">
+                  <i class="bx bx-link"></i> Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-res">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-7.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h3>Synchrotron Research: Effects of Forest Fire on Sulphur Soil Chemistry</h3>
+              <h4>Research</h4>
+              <div class="portfolio-links">
+                <a href="projects/proj-sul-sync.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details">
+                  <i class="bx bx-link"></i> Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-res">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h3>Synchrotron Research: Chromium and Arsenic in the Oil Industry</h3>
+              <h4>Research</h4>
+              <div class="portfolio-links">
+                <a href="projects/proj-chr-arsc-sync.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details">
+                  <i class="bx bx-link"></i> Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-res">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-9.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h3>CERN Beamline for Schools | Team Investigate Tachyons</h3>
+              <h4>Research</h4>
+              <div class="portfolio-links">
+                <a href="projects/proj-cern.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details">
+                  <i class="bx bx-link"></i> Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-mech">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-10.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h3>FIRST Robotics | Team 4334</h3>
+              <h4>Mechanical</h4>
+              <div class="portfolio-links">
+                <a href="projects/proj-atta-4334.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details">
+                  <i class="bx bx-link"></i> Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-hw">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h3>Arduino VU Meter</h3>
+              <h4>Hardware</h4>
+              <div class="portfolio-links">
+                <a href="projects/proj-vu-meter.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details">
+                  <i class="bx bx-link"></i> Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-sw">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-12.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h3>ROS Spiral Search Alogirthm</h3>
+              <h4>Software</h4>
+              <div class="portfolio-links">
+                <a href="projects/proj-ros-pack.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details">
+                  <i class="bx bx-link"></i> Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
 
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="portfolio">
@@ -919,6 +1221,30 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr1XzFLiVCfU5Gu0_TI4zGFxzk4azdB1Y&callback=initMap"
     async>
+  </script>
+
+  <script>
+    // Random tree
+  const N = 300;
+  const gData = {
+    nodes: [...Array(N).keys()].map(i => ({ id: i })),
+    links: [...Array(N).keys()]
+      .filter(id => id)
+      .map(id => ({
+        source: id,
+        target: Math.round(Math.random() * (id-1))
+      }))
+  };
+
+  const Graph = ForceGraph3D()
+    (document.getElementById('3d-graph'))
+      .cooldownTicks(100)
+      .graphData(gData)
+      .width(800)
+      .height(800);
+
+  // fit to canvas when engine stops
+  Graph.onEngineStop(() => Graph.zoomToFit(400));
   </script>
 
 </body>
