@@ -640,7 +640,7 @@
     </div>
 		
 	  <div class="row">
-        <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <div class="col-lg-4 pt-4 pt-lg-0 content" data-aos="fade-left">
           <div class="highlight-title col-lg-6">
             <h2><strong>Software Focused</strong></h2>
           </div>
@@ -648,39 +648,41 @@
               <div class="col-lg-12">
                 <ul>
                   <li><i class="icofont-rounded-right"></i> Automatic Control Systems</li>
-                  <li><i class="icofont-rounded-right"></i> </li>
-                  <li><i class="icofont-rounded-right"></i> <strong>UWOrbital | </strong> Embedded Engineering | Electrical Power Systems</li>
+                  <li><i class="icofont-rounded-right"></i> Digital Computation</li>
+                  <li><i class="icofont-rounded-right"></i> Algorithms and Data Structures</li>
+                  <li><i class="icofont-rounded-right"></i> Computer Structures & Real-Time Systems</li>
                 </ul>
               </div>
             </div>
           <div class="highlight-title col-lg-6">
-            <h2><strong>Electrical Focused</strong></h2>
+            <h2><strong>Mechanical Focused</strong></h2>
           </div>
           <div class="row">
             <div class="col-lg-12">
               <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Athos | </strong> Software Engineering Intern </li>
-                <li><i class="icofont-rounded-right"></i> <strong>Athos | </strong> Embedded Engineering Intern </li>
-                <li><i class="icofont-rounded-right"></i> <strong>IntelliCulture | </strong> Software Engineering Intern </li>
-                <li><i class="icofont-rounded-right"></i> <strong>UWAFT EcoCar Team | </strong> Electrical Engineering Lead</li>
-                <li><i class="icofont-rounded-right"></i> <strong>UW Robotics | </strong> Software Engineering Team Member</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Geotab | </strong> Automotive R&D Engineering Intern</li>
-                <li><i class="icofont-rounded-right"></i> <strong>University of Waterloo | </strong> Rsearch Assistant Intern</li>
+                <li><i class="icofont-rounded-right"></i> Electromechanical Machine Desgin</li>
+                <li><i class="icofont-rounded-right"></i> Fliud Mechanics</li>
+                <li><i class="icofont-rounded-right"></i> Structure and Properties of Materials</li>
+                <li><i class="icofont-rounded-right"></i> Mechanics of Deformable Solids</li>
+                <li><i class="icofont-rounded-right"></i> Thermodynamics and Heat Transfer</li>
+                <li><i class="icofont-rounded-right"></i> Design and Dynamics of Machines</li>
               </ul>
             </div>
           </div>
         </div>
 		
-        <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <div class="col-lg-4 pt-4 pt-lg-0 content" data-aos="fade-left">
           <div class="highlight-title col-lg-6">
-            <h2><strong>Mechanical Focused</strong></h2>
+            <h2><strong>Electrical Focused</strong></h2>
           </div>
             <div class="row">
               <div class="col-lg-12">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> Electromechanical Machine Desgin </li>
-                  <li><i class="icofont-rounded-right"></i> Fliud Mechanics</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>UWOrbital | </strong> Embedded Engineering | Electrical Power Systems</li>
+                  <li><i class="icofont-rounded-right"></i> Circuits</li>
+                  <li><i class="icofont-rounded-right"></i> Microprocessors and Digital Logic</li>
+                  <li><i class="icofont-rounded-right"></i> Sensors and Instrumentation</li>
+                  <li><i class="icofont-rounded-right"></i> Actuators and Power Electronics</li>
+                  <li><i class="icofont-rounded-right"></i> Microprocessor Systems and Interfacing</li>
                 </ul>
               </div>
             </div>
@@ -690,16 +692,20 @@
           <div class="row">
             <div class="col-lg-12">
               <ul>
-				<li><i class="icofont-rounded-right"></i>Mechatronics Engineering Design</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Athos | </strong> Embedded Engineering Intern </li>
-                <li><i class="icofont-rounded-right"></i> <strong>IntelliCulture | </strong> Software Engineering Intern </li>
-                <li><i class="icofont-rounded-right"></i> <strong>UWAFT EcoCar Team | </strong> Electrical Engineering Lead</li>
-                <li><i class="icofont-rounded-right"></i> <strong>UW Robotics | </strong> Software Engineering Team Member</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Geotab | </strong> Automotive R&D Engineering Intern</li>
-                <li><i class="icofont-rounded-right"></i> <strong>University of Waterloo | </strong> Rsearch Assistant Intern</li>
+				        <li><i class="icofont-rounded-right"></i> Mechatronics Engineering Design</li>
+                <li><i class="icofont-rounded-right"></i> Linear Systems and Signals</li>
+                <li><i class="icofont-rounded-right"></i> Systems Models</li>
+                <li><i class="icofont-rounded-right"></i> Linear Algebra</li>
+                <li><i class="icofont-rounded-right"></i> Advanced Calculus</li>
+                <li><i class="icofont-rounded-right"></i> Numerical Methods</li>
+                <li><i class="icofont-rounded-right"></i> Statics & Dynamics</li>
               </ul>
             </div>
           </div>
+        </div>
+
+        <div class="col-lg-4 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <div id="displayContent"></canvas>
         </div>
     </div>
 
@@ -1223,7 +1229,7 @@
     async>
   </script>
 
-  <script>
+  <!-- <script>
     // Random tree
   const N = 300;
   const gData = {
@@ -1245,6 +1251,17 @@
 
   // fit to canvas when engine stops
   Graph.onEngineStop(() => Graph.zoomToFit(400));
+  </script> -->
+
+  <script src="js/three.js"></script>
+  <script src="js/dodecahedron.js"></script>
+  <script src="js/models.js"></script>
+  <script src="js/hypercube.js"></script>
+  <script>
+    var drawingSurface = document.getElementById('displayContent');
+    // display_sphere(drawingSurface);
+
+    main(drawingSurface, 350, 450);
   </script>
 
 </body>
