@@ -705,7 +705,7 @@
         </div>
 
         <div class="col-lg-4 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <div id="displayContent"></canvas>
+          <div id="educationHyperMesh"></canvas>
         </div>
     </div>
 
@@ -1162,8 +1162,7 @@
             <h3>Social Profiles</h3>
             <div class="social-links">
               <a href="https://www.linkedin.com/in/urbanpistek/" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></a>
-              <!-- <a href="#" class="github"><i class="icofont-github"></i></a>
-              <a href="#" class="github"><i class="icofont-code-alt"></i></a> -->
+              <a href="https://medium.com/@urban.pistek" class="" target="_blank"><i class="fa fa-medium"></i></a>
               <a href="https://github.com/UrbanPistek" class="" target="_blank"><i class="fa fa-github"></i></a>
               <a href="https://gitlab.com/Urban_Pistek" class="" target="_blank"><i class="ri-gitlab-fill"></i></a>
             </div>
@@ -1185,11 +1184,19 @@
           </div>
         </div>
       </div>
-
+      
+      <!-- 
       <div>
         <img src="assets/img/contact2.jpg" class="img-contact" alt="">
         <img src="assets/img/contact.jpg" class="img-contact" alt="">
         <img src="assets/img/contact1.jpg" class="img-contact" alt="">
+      </div> -->
+
+      <hr style="height:30px"> 
+      <br>
+      <div style="border: 15px; padding: 15px; margin: 15px;">
+        <br>
+        <div class="h-100 d-flex align-items-center justify-content-center" id="contactModel"></canvas>
       </div>
 
     </div>
@@ -1257,11 +1264,15 @@
   <script src="js/dodecahedron.js"></script>
   <script src="js/models.js"></script>
   <script src="js/hypermesh.js"></script>
+  <script src="js/perlin.js"></script>
   <script>
-    var drawingSurface = document.getElementById('displayContent');
-    // display_sphere(drawingSurface);
+    var educationHyperMesh = document.getElementById('educationHyperMesh');
+    render_hypermesh(educationHyperMesh, 350, 450, "-xw", 2.75, 0.75);
 
-    render_hypermesh(drawingSurface, 350, 450, "-xw", 2.75, 0.75);
+    // Other models
+    var contactModel = document.getElementById('contactModel');
+    display_noise_sphere(contactModel, 300, 300, 0.001, 2, 1, 50, 50, 2);
+    // create_noise_sphere(drawingSurface, 350, 450, 1, 1, 100, 100);
   </script>
 
 </body>

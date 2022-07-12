@@ -35,7 +35,7 @@ function init(container, len, height, distance){
 
     camera.lookAt(new THREE.Vector3(0, 0, 0));
 
-    renderer = new THREE.WebGLRenderer();
+    renderer = new THREE.WebGLRenderer({alpha: true});
     
     renderer.setSize(len, height);
     container.appendChild(renderer.domElement);
