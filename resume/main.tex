@@ -1,0 +1,40 @@
+
+\documentclass[10pt]{article}
+%\usepackage{hyperref}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=7.5mm,
+ top=7.5mm,
+ right=7.5mm, 
+ bottom=5mm
+}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+% \def\theme{MidnightBlue}
+\def\theme{MidnightBlue}
+% For more, see https://en.wikibooks.org/wiki/LaTeX/Colors
+
+\usepackage{simplecv}
+
+\boldname{Surname}{Name}{N.}
+
+\begin{document}
+
+% Heading
+\headinginline{Urban Pistek}{
+    \textbf{Website}: \href{www.urbanpistek.com}{urbanpistek.com} \\ 
+    \textbf{Email}: \email{upistek@uwaterloo.ca} \\
+    \textbf{LinkedIn}: \linkedin{urbanpistek} \\
+    \textbf{GitHub}: \github{UrbanPistek} \\
+    %\textbf{GitLab}: \href{https://gitlab.com/Urban_Pistek}{gitlab.com/Urban\_Pistek}
+}
+
+% Page One
+\import{sections/}{experience.tex}
+\import{sections/}{projects.tex}
+\import{sections/}{skills.tex}
+\import{sections/}{education.tex}
+
+\end{document}

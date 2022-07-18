@@ -395,13 +395,21 @@ function mapData(){
       },
     elevation_m: 2210
     },
-    prairie_mountain_ab:{
+    opal_ridge_ab:{
       name: "Opal Ridge", 
       coords: {
           lat: 50.785922,
           lng: -115.137083
         },
       elevation_m: 2575
+      },
+    grizzly_peak_ab:{
+      name: "Grizzly Peak", 
+      coords: {
+          lat: 50.762149,
+          lng: -115.119343
+        },
+      elevation_m: 2545
       }
   }
 
