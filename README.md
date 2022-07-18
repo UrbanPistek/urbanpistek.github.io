@@ -1,9 +1,7 @@
-## Website Version 2.6
+## Portfolio Website
 
 Hello, 
 
-These are the files used to build out my personal static website. 
-
-Live Website can be found here: www.urbanpistek.com
+My live portfolio website can be found here: www.urbanpistek.com
 
 Thanks, 
