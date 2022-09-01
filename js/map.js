@@ -410,6 +410,38 @@ function mapData(){
           lng: -115.119343
         },
       elevation_m: 2545
+      }, 
+    mount_smutwood_ab:{
+      name: "Mount Smutwood", 
+      coords: {
+          lat: 50.800670,
+          lng: -115.398394
+        },
+      elevation_m: 2693
+      }, 
+    parker_ridge_ab:{
+      name: "Parker Ridge", 
+      coords: {
+          lat: 52.181561,
+          lng: -117.089218
+        },
+      elevation_m: 2255
+      }, 
+    mount_willingdon_ab:{
+      name: "Mount Willingdon", 
+      coords: {
+          lat: 51.756450,
+          lng: -116.249051
+        },
+      elevation_m: 3373
+      }, 
+    mount_willingdon_crown_ab:{
+      name: "Mount Willingdon Crown", 
+      coords: {
+          lat: 51.752981,
+          lng: -116.235527
+        },
+      elevation_m: 3354
       }
   }
 
