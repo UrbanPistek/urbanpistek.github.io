@@ -364,7 +364,7 @@
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="count-box">
             <a href="#hiking" target="_blank"><i class="icofont-hill"></i></a>
-            <span data-toggle="counter-up">50</span>
+            <span data-toggle="counter-up" id="mountain-count" >50</span>
             <p>Mountains Summited</p>
           </div>
         </div>
@@ -1248,6 +1248,11 @@
     render_hypercube(contactModel, 300, 300, "yz -xw", 3, 0.75);
     // display_noise_sphere(contactModel, 300, 300, 0.001, 2, 1, 50, 50, 2);
     // create_noise_sphere(drawingSurface, 350, 450, 1, 1, 100, 100);
+  </script>
+
+  <script>
+    // Update the mountains summited dynamically
+    document.getElementById('mountain-count').textContent = mountainCount();
   </script>
 
 </body>
