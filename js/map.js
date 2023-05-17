@@ -18,7 +18,7 @@ function displayMountains(map){
   let data = mapData();
 
   for(const item in data){
-    console.log(data[item].name)
+    // console.log(data[item].name)
       const infowindow = new google.maps.InfoWindow({
     content: String(data[item].name),
   });
@@ -39,6 +39,15 @@ function displayMountains(map){
   });
 
   }
+}
+
+function mountainCount(){
+
+  let data = mapData();
+  var count =  Object.keys(data).length;
+  console.log("Mountain count: ", Object.keys(data).length);
+
+  return count;
 }
 
 function mapData(){
@@ -442,6 +451,14 @@ function mapData(){
           lng: -116.235527
         },
       elevation_m: 3354
+      },
+    the_wedge:{
+      name: "The Wedge", 
+      coords: {
+          lat: 50.850034,
+          lng: -115.134502
+        },
+      elevation_m: 2667
       }
   }
 
