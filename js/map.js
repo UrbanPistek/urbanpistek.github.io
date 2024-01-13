@@ -26,7 +26,7 @@ function displayMountains(map){
     const marker = new google.maps.Marker({
       position: data[item].coords,
       map: map,
-      icon: "assets/img/map_icon.svg",
+      icon: "assets/img/map_icon2.png",
       title: data[item].name
     });
 
@@ -452,14 +452,95 @@ function mapData(){
         },
       elevation_m: 3354
       },
-    the_wedge:{
+    the_wedge_ab:{
       name: "The Wedge", 
       coords: {
           lat: 50.850034,
           lng: -115.134502
         },
       elevation_m: 2667
-      }
+      },
+
+    opal_north_peak_ab:{
+      name: "Opal North Peak", 
+      coords: {
+          lat: 50.820842,
+          lng: -115.144400
+        },
+      elevation_m: 2483
+      },
+    king_creek_ridge_ab:{
+      name: "King Creek Ridge", 
+      coords: {
+          lat: 50.737500,
+          lng: -115.105201
+        },
+      elevation_m: 2423
+      },
+    king_creek_ridge_ab:{
+      name: "King Creek Ridge", 
+      coords: {
+          lat: 50.737500,
+          lng: -115.105201
+        },
+      elevation_m: 2423
+      },
+    mt_joffre_ab:{
+      name: "Mount Joffre", 
+      coords: {
+          lat: 50.528477,
+          lng: -115.206786
+        },
+      elevation_m: 3450
+      },
+    mist_mountain_ab:{
+      name: "Mist Mountain", 
+      coords: {
+          lat: 50.554130,
+          lng: -114.910160
+        },
+      elevation_m: 3139
+      },
+    burroughs_mountain_wa:{
+      name: "Burroughs Mountain", 
+      coords: {
+          lat: 46.901713,
+          lng: -121.713637
+        },
+      elevation_m: 2380
+      },
+    crescent_spire_bc:{
+      name: "Crescent Spire", 
+      coords: {
+          lat: 50.750315,
+          lng: -116.776617
+        },
+      elevation_m: 2843
+      },
+    jumbo_mountain_bc:{
+      name: "Jumbo Mountain", 
+      coords: {
+          lat: 50.403213,
+          lng: -116.564999
+        },
+      elevation_m: 3390
+      },
+    androlumbia_ab:{
+      name: "Androlumbia", 
+      coords: {
+          lat: 52.161586,
+          lng: -117.251751
+        },
+      elevation_m: 3300
+      },
+    the_onion_ab:{
+      name: "The Onion", 
+      coords: {
+          lat: 51.641103,
+          lng: -116.502085
+        },
+      elevation_m: 2670
+      },
   }
 
   return dataset; 
