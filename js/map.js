@@ -541,6 +541,39 @@ function mapData(){
         },
       elevation_m: 2670
       },
+
+    vice_president_bc:{
+      name: "Vice President", 
+      coords: {
+          lat: 51.641103,
+          lng: -116.502085
+        },
+      elevation_m: 3077
+      },
+    mt_hector_knob_ab:{
+      name: "Mount Hector Knob", 
+      coords: {
+          lat: 51.641103,
+          lng: -116.502085
+        },
+      elevation_m: 2670
+      },
+    rundeman_nor:{
+      name: "Rundeman", 
+      coords: {
+          lat: 51.641103,
+          lng: -116.502085
+        },
+      elevation_m: 568
+      },
+    gullfjellstoppen_nor:{
+      name: "Gullfjellstoppen", 
+      coords: {
+          lat: 51.641103,
+          lng: -116.502085
+        },
+      elevation_m: 987
+      },
   }
 
   return dataset; 
