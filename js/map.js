@@ -613,6 +613,46 @@ function mapData(){
         },
       elevation_m: 984
       },
+    baldy_west_ab:{
+      name: "Mount Baldy West", 
+      coords: {
+          lat: 51.000010,
+          lng: -115.052185
+        },
+      elevation_m: 2125
+      },
+    baldy_south_ab:{
+      name: "Mount Baldy South", 
+      coords: {
+          lat: 51.003178,
+          lng: -115.044844
+        },
+      elevation_m: 2145
+      },
+    midnight_peak_ab:{
+      name: "Midnight Peak", 
+      coords: {
+          lat: 50.979749,
+          lng: -115.034775
+        },
+      elevation_m: 2348
+      },
+    midday_peak_ab:{
+      name: "Midday Peak", 
+      coords: {
+          lat: 50.973973,
+          lng: -115.027201
+        },
+      elevation_m: 2340
+      },
+    mount_niles_bc:{
+      name: "Mount Niles", 
+      coords: {
+          lat: 51.505142,
+          lng: -116.421050
+        },
+      elevation_m: 2972
+      },
   }
 
   return dataset; 
