@@ -52,7 +52,7 @@ function hc_init(container, len, height, distance){
 
     hc_camera.lookAt(new THREE.Vector3(0, 0, 0));
 
-    hc_renderer = new THREE.WebGLRenderer({alpha: true});
+    hc_renderer = new THREE.WebGLRenderer({alpha: true, precision: "lowp"});
     
     hc_renderer.setSize(len, height);
     container.appendChild(hc_renderer.domElement);
@@ -66,10 +66,15 @@ function render_hypercube(container, len, height, hc_defaultRotation, distance, 
 
     console.log("Hypercube", len, height, hc_defaultRotation, distance, hc_defaultAngle);
 
+    const fps = 60;
     hc_init(container, len, height, distance);
 
     function animate(){
-        requestAnimationFrame( animate );
+
+        // Animate at a specific frame rate
+        setTimeout(() => {
+            requestAnimationFrame( animate );
+        }, 1000 / fps);
         
         switch (hc_defaultRotation) {
             case "xy":

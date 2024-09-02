@@ -5,7 +5,7 @@ function initMap() {
   const center = { lat: 42.666318, lng:  -108.023603 };
   // The map, centered at Uluru
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4, // 0 is no zoom
+    zoom: 2, // 0 is no zoom
     center: center,
     mapTypeId: 'terrain'
   });
@@ -540,6 +540,134 @@ function mapData(){
           lng: -116.502085
         },
       elevation_m: 2670
+      },
+    vice_president_bc:{
+      name: "Vice President", 
+      coords: {
+          lat: 51.50275679512224,
+          lng: -116.5524337141685
+        },
+      elevation_m: 3077
+      },
+    mt_hector_knob_ab:{
+      name: "Mount Hector Knob", 
+      coords: {
+          lat: 51.57628348692926,
+          lng: -116.25282349065854
+        },
+      elevation_m: 3386
+      },
+    rundeman_nor:{
+      name: "Rundeman", 
+      coords: {
+          lat: 60.41283055993401,
+          lng: 5.366504769737034
+        },
+      elevation_m: 568
+      },
+    blamanen_nor:{
+      name: "Blamanen", 
+      coords: {
+          lat: 60.400644414335524,
+          lng: 5.363543610879524
+        },
+      elevation_m: 554
+      },
+    gullfjellstoppen_nor:{
+      name: "Gullfjellstoppen", 
+      coords: {
+          lat: 60.386354321395736,
+          lng:  5.589364151591277
+        },
+      elevation_m: 987
+      },
+    predne_solisko_svk:{
+      name: "Predne Solisko", 
+      coords: {
+          lat: 49.14946876266241,
+          lng:  20.0390034725903
+        },
+      elevation_m: 2093
+      },
+    soliskovy_hrb_svk:{
+      name: "Soliskovy Hrb", 
+      coords: {
+          lat: 49.15123716695834,
+          lng:  20.036978404895436
+        },
+      elevation_m: 2302
+      },
+    ganekogotra_spn:{
+      name: "Ganekogotra", 
+      coords: {
+          lat: 43.20174055707425,
+          lng:  -2.979932783382581
+        },
+      elevation_m: 999
+      },
+    arrabatxu_spn:{
+      name: "Arrabatxu", 
+      coords: {
+          lat: 43.200051249175424,
+          lng: -2.982808111579372
+        },
+      elevation_m: 984
+      },
+    baldy_west_ab:{
+      name: "Mount Baldy West", 
+      coords: {
+          lat: 51.000010,
+          lng: -115.052185
+        },
+      elevation_m: 2125
+      },
+    baldy_south_ab:{
+      name: "Mount Baldy South", 
+      coords: {
+          lat: 51.003178,
+          lng: -115.044844
+        },
+      elevation_m: 2145
+      },
+    midnight_peak_ab:{
+      name: "Midnight Peak", 
+      coords: {
+          lat: 50.979749,
+          lng: -115.034775
+        },
+      elevation_m: 2348
+      },
+    midday_peak_ab:{
+      name: "Midday Peak", 
+      coords: {
+          lat: 50.973973,
+          lng: -115.027201
+        },
+      elevation_m: 2340
+      },
+    mount_niles_bc:{
+      name: "Mount Niles", 
+      coords: {
+          lat: 51.505142,
+          lng: -116.421050
+        },
+      elevation_m: 2972
+      },
+    mount_galatea_ab:{
+      name: "Mount Galatea", 
+      coords: {
+          lat: 50.839622, 
+          lng: -115.273452
+        },
+      elevation_m: 3185
+      },
+    mount_jellicoe_ab:{
+      name: "Mount Jellicoe", 
+      coords: {
+          lat: 50.714495,
+          lng: -115.290530
+        },
+      elevation_m: 3075
       },
   }
 
