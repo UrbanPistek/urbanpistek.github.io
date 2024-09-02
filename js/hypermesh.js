@@ -69,7 +69,7 @@ function init(container, len, height, distance){
 
     camera.lookAt(new THREE.Vector3(0, 0, 0));
 
-    renderer = new THREE.WebGLRenderer({alpha: true});
+    renderer = new THREE.WebGLRenderer({alpha: true, precision: "lowp"});
     
     renderer.setSize(len, height);
     container.appendChild(renderer.domElement);
@@ -83,10 +83,15 @@ function render_hypermesh(container, len, height, defaultRotation, distance, def
 
     console.log("Hypermesh", len, height, defaultRotation, distance, defaultAngle);
 
+    const fps = 60;
     init(container, len, height, distance);
 
     function animate(){
-        requestAnimationFrame( animate );
+        
+        // Animate at a specific frame rate
+        setTimeout(() => {
+            requestAnimationFrame( animate );
+        }, 1000 / fps);
         
         switch (defaultRotation) {
             case "xy":

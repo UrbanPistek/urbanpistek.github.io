@@ -653,6 +653,22 @@ function mapData(){
         },
       elevation_m: 2972
       },
+    mount_galatea_ab:{
+      name: "Mount Galatea", 
+      coords: {
+          lat: 50.839622, 
+          lng: -115.273452
+        },
+      elevation_m: 3185
+      },
+    mount_jellicoe_ab:{
+      name: "Mount Jellicoe", 
+      coords: {
+          lat: 50.714495,
+          lng: -115.290530
+        },
+      elevation_m: 3075
+      },
   }
 
   return dataset; 
