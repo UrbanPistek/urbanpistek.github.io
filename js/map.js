@@ -669,6 +669,22 @@ function mapData(){
         },
       elevation_m: 3075
       },
+      mount_hoffman_ab:{
+        name: "Mount Hoffman", 
+        coords: {
+            lat: 50.605158,
+            lng: -114.690404
+          },
+        elevation_m: 2005
+        },
+      clouds_rest_ca:{
+        name: "Clouds Rest", 
+        coords: {
+            lat: 37.767689,
+            lng: -119.489552
+          },
+        elevation_m: 3028
+        },
   }
 
   return dataset; 
