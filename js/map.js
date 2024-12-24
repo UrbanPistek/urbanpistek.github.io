@@ -7,7 +7,11 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 2, // 0 is no zoom
     center: center,
-    mapTypeId: 'terrain'
+    mapTypeId: 'terrain',
+    streetViewControl: false,
+    options: {
+      gestureHandling: 'greedy'
+    }
   });
 
   displayMountains(map);
@@ -18,10 +22,15 @@ function displayMountains(map){
   let data = mapData();
 
   for(const item in data){
-    // console.log(data[item].name)
-      const infowindow = new google.maps.InfoWindow({
-    content: String(data[item].name),
-  });
+    const displayContent = `
+    <div>
+      <h6>${String(data[item].name)}</h6>
+      <p><strong>Elevation</strong>: ${String(data[item].elevation_m)}m</p>
+    </div>
+    `;
+    const infowindow = new google.maps.InfoWindow({
+      content: displayContent,
+    });
 
     const marker = new google.maps.Marker({
       position: data[item].coords,
@@ -30,24 +39,34 @@ function displayMountains(map){
       title: data[item].name
     });
 
-      marker.addListener("click", () => {
-    infowindow.open({
-      anchor: marker,
-      map,
-      shouldFocus: false,
+    marker.addListener("click", () => {
+      infowindow.open({
+        anchor: marker,
+        map,
+        shouldFocus: false,
+      });
     });
-  });
 
   }
 }
 
 function mountainCount(){
-
   let data = mapData();
   var count =  Object.keys(data).length;
   console.log("Mountain count: ", Object.keys(data).length);
-
   return count;
+}
+
+function distanceCount(){
+  let data = statsData();
+  const totalDistance = Object.values(data).reduce((sum, year) => sum + year.distance_km, 0);
+  return totalDistance;
+}
+
+function verticalCount(){
+  let data = statsData();
+  const totalVertical = Object.values(data).reduce((sum, year) => sum + year.vertical_m, 0);
+  return totalVertical;
 }
 
 function mapData(){
@@ -688,4 +707,39 @@ function mapData(){
   }
 
   return dataset; 
+}
+
+function statsData(){
+  dataset = {
+    2017: {
+      distance_km: 40,
+      vertical_m: 2400,
+    },
+    2018: {
+      distance_km: 89,
+      vertical_m: 6800,
+    },
+    2019: {
+      distance_km: 21,
+      vertical_m: 2400,
+    },
+    2020: {
+      distance_km: 368,
+      vertical_m: 23000,
+    },
+    2021: {
+      distance_km: 187,
+      vertical_m: 16000,
+    },
+    2022: {
+      distance_km: 106,
+      vertical_m: 6500,
+    },
+    2023: {
+      distance_km: 306,
+      vertical_m: 21000,
+    },
+  }
+
+  return dataset;
 }
