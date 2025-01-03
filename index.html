@@ -368,7 +368,7 @@
 
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="count-box">
-            <a href="#hiking" target="_blank"><i class="icofont-hill"></i></a>
+            <i class="icofont-hill"></i></a>
             <span data-toggle="counter-up" id="mountain-count" >50</span>
             <p>Mountains Summited</p>
           </div>
@@ -1178,13 +1178,53 @@
   <section id="hiking" class="hiking">
     <div class="container">
 
+
+      <!--  -->
       <div class="section-title">
         <h2>Mountains</h2>
+        <p>Mountaineering Statistics</p>
+      </div>
+      <div>
+        <p>2017 - 2024</p>
+      </div>
+      
+      <!--  -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1><span class="counter" id="distance-count">1110</span></h1>
+            <h3>Distance Traversed</h3>
+            <h4><em>(km)</em></h4>
+          </div>
+          <div class="col-md-4">
+            <h1><span class="counter" id="vertical-count">75000</span></h1>
+            <h3>Vertical Gained</h3>
+            <h4><em>(m)</em></h4>
+          </div>
+          <div class="col-md-4">
+            <h1><span class="counter" id="mountain-count-2">75</span></h1>
+            <h3>Mountains Summited</h3>
+            <h4><em>(count)</em></h4>
+          </div>
+        </div>
+      </div>
+      <hr style="height:2px;border-width:0;color:black;background-color:#4ceb95">
+      <br>
+
+      <div class="section-title">
         <p>Mountains I have summited</p>
       </div>
 
       <!--The div element for the map -->
       <div id="map"></div>
+
+      <br>
+      <div class="section-title">
+        <h2>Mt. Jellicoe</h2>
+        <p>Taking a pause on the glacier to enjoy the good weather</p>
+      </div>
+      <img src="assets/img/mountain5.jpeg" class="img-contact" alt="">
+      <br>
 
       <br>
       <div class="section-title">
@@ -1338,6 +1378,18 @@
   <script>
     // Update the mountains summited dynamically
     document.getElementById('mountain-count').textContent = mountainCount();
+  </script>
+
+  <script>
+    document.getElementById('distance-count').textContent = distanceCount();
+    document.getElementById('vertical-count').textContent = verticalCount();
+    document.getElementById('mountain-count-2').textContent = mountainCount();
+    $('.counter').counterUp({
+      delay: 1,
+      time: 500
+    });
+    $('.counter').addClass('animated fadeInDownBig');
+    $('h3').addClass('animated fadeIn');
   </script>
 
 </body>
