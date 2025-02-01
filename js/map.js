@@ -522,6 +522,15 @@ function mapData(){
       elevation_m: 3354,
       year: 2022
       },
+    mount_mackay_ab:{
+      name: "Mount Mackay", 
+      coords: {
+          lat: 50.851256, 
+          lng: -115.119626
+        },
+      elevation_m: 2394,
+      year: 2023
+    },
     the_wedge_ab:{
       name: "The Wedge", 
       coords: {
@@ -817,3 +826,4 @@ function statsData(){
 
   return dataset;
 }
+
