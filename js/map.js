@@ -783,6 +783,25 @@ function mapData(){
       elevation_m: 3028,
       year: 2024
       },
+
+    cox_hill_ab:{
+      name: "Cox Hill", 
+      coords: {
+          lat: 50.990150,
+          lng: -114.906649
+        },
+      elevation_m: 2190,
+      year: 2025
+      },
+    grant_macewan_ab:{
+      name: "Grant MacEwan Peak", 
+      coords: {
+          lat: 51.032846,
+          lng: -115.121594
+        },
+      elevation_m: 2148,
+      year: 2025
+      },
   }
 
   return dataset; 
@@ -821,6 +840,15 @@ function statsData(){
     2024: {
       distance_km: 328,
       vertical_m: 23200,
+    },
+
+    /*
+    Cox Hill - 13, 780
+    Grant MacEwan Peak - 12, 1060
+    */
+    2025: {
+      distance_km: 25,
+      vertical_m: 1840,
     },
   }
 
