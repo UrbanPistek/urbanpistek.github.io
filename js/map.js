@@ -845,10 +845,11 @@ function statsData(){
     /*
     Cox Hill - 13, 780
     Grant MacEwan Peak - 12, 1060
+    Balu Pass - 12, 850
     */
     2025: {
-      distance_km: 25,
-      vertical_m: 1840,
+      distance_km: 37,
+      vertical_m: 2690,
     },
   }
 
