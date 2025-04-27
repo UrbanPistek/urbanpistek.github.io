@@ -802,6 +802,15 @@ function mapData(){
       elevation_m: 2148,
       year: 2025
       },
+    snow_dome_ab:{
+      name: "Snow Dome", 
+      coords: {
+          lat: 52.186582,
+          lng: -117.317222
+        },
+      elevation_m: 3456,
+      year: 2025
+      },
   }
 
   return dataset; 
@@ -846,10 +855,11 @@ function statsData(){
     Cox Hill - 13, 780
     Grant MacEwan Peak - 12, 1060
     Balu Pass - 12, 850
+    Snow Dome - 22, 1500
     */
     2025: {
-      distance_km: 37,
-      vertical_m: 2690,
+      distance_km: 59,
+      vertical_m: 4190,
     },
   }
 
