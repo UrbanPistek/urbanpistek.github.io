@@ -811,6 +811,42 @@ function mapData(){
       elevation_m: 3456,
       year: 2025
       },
+    vinicunca_peru:{
+      name: "Vinicunca", 
+      coords: {
+          lat: -13.867774,
+          lng: -71.303090
+        },
+      elevation_m: 5036,
+      year: 2025
+      },
+    hatun_ritlyoq_peru:{
+      name: "Hutan Rit'lyoq", 
+      coords: {
+          lat: -13.875757,
+          lng: -71.312310
+        },
+      elevation_m: 5069,
+      year: 2025
+      },
+    katunki_peru:{
+      name: "Katunki", 
+      coords: {
+          lat: -13.469366,
+          lng: -71.972831
+        },
+      elevation_m: 4182,
+      year: 2025
+      },
+    chachani_peru:{
+      name: "Chachani", 
+      coords: {
+          lat: -16.195187,
+          lng: -71.532300
+        },
+      elevation_m: 6075,
+      year: 2025
+      },
   }
 
   return dataset; 
@@ -856,10 +892,14 @@ function statsData(){
     Grant MacEwan Peak - 12, 1060
     Balu Pass - 12, 850
     Snow Dome - 22, 1500
+    Vinicunca + Hutan Rit'lyoq - 10, 600
+    Katunki - 22, 1040
+    Chachani - 9, 1000
+    Salkantay - 79, 2800
     */
     2025: {
-      distance_km: 59,
-      vertical_m: 4190,
+      distance_km: 179,
+      vertical_m: 9630,
     },
   }
 
