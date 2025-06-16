@@ -847,7 +847,25 @@ function mapData(){
       elevation_m: 6075,
       year: 2025
       },
-  }
+    habel_ab:{
+      name: "Mount Habel", 
+      coords: {
+          lat: 51.648702,
+          lng: -116.571132
+        },
+      elevation_m: 3073,
+      year: 2025
+      },
+    tilley_peak_ab:{
+      name: "Tilley Peak", 
+      coords: {
+          lat: 51.671658,
+          lng: -116.588729
+        },
+      elevation_m: 2961,
+      year: 2025
+      },
+}
 
   return dataset; 
 }
@@ -896,10 +914,11 @@ function statsData(){
     Katunki - 22, 1040
     Chachani - 9, 1000
     Salkantay - 79, 2800
+    Habel + Tilley - 33, 2700
     */
     2025: {
-      distance_km: 179,
-      vertical_m: 9630,
+      distance_km: 212,
+      vertical_m: 12330,
     },
   }
 
