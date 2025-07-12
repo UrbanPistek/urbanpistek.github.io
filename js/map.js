@@ -865,6 +865,33 @@ function mapData(){
       elevation_m: 2961,
       year: 2025
       },
+    highwood_ridge_ab:{
+      name: "Highwood Ridge", 
+      coords: {
+          lat: 50.588565,
+          lng: -114.992465
+        },
+      elevation_m: 2697,
+      year: 2025
+      },
+    grizzly_ridge_ab:{
+      name: "Grizzly Ridge", 
+      coords: {
+          lat: 50.582420,
+          lng: -115.006180
+        },
+      elevation_m: 2700,
+      year: 2025
+      },
+    mount_tyrwhitt_ab:{
+      name: "Mount Trywhitt", 
+      coords: {
+          lat: 50.582171, 
+          lng: -115.016238
+        },
+      elevation_m: 2874,
+      year: 2025
+      },
 }
 
   return dataset; 
@@ -915,10 +942,11 @@ function statsData(){
     Chachani - 9, 1000
     Salkantay - 79, 2800
     Habel + Tilley - 33, 2700
+    Highwood + Grizzly + Tyrwhitt - 9, 1000
     */
     2025: {
-      distance_km: 212,
-      vertical_m: 12330,
+      distance_km: 221,
+      vertical_m: 13330,
     },
   }
 
