@@ -892,6 +892,24 @@ function mapData(){
       elevation_m: 2874,
       year: 2025
       },
+    volcano_ridge_ab:{
+      name: "Volcano Ridge", 
+      coords: {
+          lat: 50.708419,
+          lng: -114.711286
+        },
+      elevation_m: 2127,
+      year: 2025
+      },
+    south_volcano_ridge_ab:{
+      name: "South Volcano Ridge", 
+      coords: {
+          lat: 50.691296,
+          lng: -114.705579
+        },
+      elevation_m: 1950,
+      year: 2025
+      },
 }
 
   return dataset; 
@@ -943,10 +961,11 @@ function statsData(){
     Salkantay - 79, 2800
     Habel + Tilley - 33, 2700
     Highwood + Grizzly + Tyrwhitt - 9, 1000
+    Volcano Ridge + South - 17, 800
     */
     2025: {
-      distance_km: 221,
-      vertical_m: 13330,
+      distance_km: 238,
+      vertical_m: 14130,
     },
   }
 
