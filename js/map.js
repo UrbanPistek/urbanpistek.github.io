@@ -910,6 +910,24 @@ function mapData(){
       elevation_m: 1950,
       year: 2025
       },
+    mount_aberdeen_ab:{
+      name: "Mount Aberdeen", 
+      coords: {
+          lat: 51.378729,
+          lng: -116.246586,
+        },
+      elevation_m: 3150,
+      year: 2025
+      },
+    haddo_peak_ab:{
+      name: "Haddo Peak", 
+      coords: {
+          lat: 51.381678,
+          lng: -116.235599
+        },
+      elevation_m: 3070,
+      year: 2025
+      },
 }
 
   return dataset; 
@@ -962,10 +980,11 @@ function statsData(){
     Habel + Tilley - 33, 2700
     Highwood + Grizzly + Tyrwhitt - 9, 1000
     Volcano Ridge + South - 17, 800
+    Aberdeen + Haddo - 54, 2400
     */
     2025: {
-      distance_km: 238,
-      vertical_m: 14130,
+      distance_km: 292,
+      vertical_m: 16530,
     },
   }
 
