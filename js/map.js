@@ -928,6 +928,15 @@ function mapData(){
       elevation_m: 3070,
       year: 2025
       },
+    tent_ridge_ab:{
+      name: "Tent Ridge", 
+      coords: {
+          lat: 50.820273,
+          lng: -115.373670
+        },
+      elevation_m: 2545,
+      year: 2025
+      },
 }
 
   return dataset; 
@@ -981,10 +990,11 @@ function statsData(){
     Highwood + Grizzly + Tyrwhitt - 9, 1000
     Volcano Ridge + South - 17, 800
     Aberdeen + Haddo - 54, 2400
+    Tent Ridge - 15, 840
     */
     2025: {
-      distance_km: 292,
-      vertical_m: 16530,
+      distance_km: 307,
+      vertical_m: 17370,
     },
   }
 
