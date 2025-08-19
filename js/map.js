@@ -937,6 +937,24 @@ function mapData(){
       elevation_m: 2545,
       year: 2025
       },
+    cathedral_mountain_bc:{
+      name: "Cathedral Mountain", 
+      coords: {
+          lat: 51.396524,
+          lng: -116.389994
+        },
+      elevation_m: 3189,
+      year: 2025
+      },
+    mount_victoria_north_peak_bc:{
+      name: "Mount Victoria North Peak", 
+      coords: {
+          lat: 51.384961,
+          lng: -116.312689
+        },
+      elevation_m: 3388,
+      year: 2025
+      },
 }
 
   return dataset; 
@@ -991,10 +1009,12 @@ function statsData(){
     Volcano Ridge + South - 17, 800
     Aberdeen + Haddo - 54, 2400
     Tent Ridge - 15, 840
+    Cathedral Mountain - 20, 1700
+    Mount Victoria North Peak - 20, 1700
     */
     2025: {
-      distance_km: 307,
-      vertical_m: 17370,
+      distance_km: 347,
+      vertical_m: 20770,
     },
   }
 
