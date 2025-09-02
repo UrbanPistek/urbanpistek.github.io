@@ -955,6 +955,24 @@ function mapData(){
       elevation_m: 3388,
       year: 2025
       },
+    mount_griffith_bc:{
+      name: "Mount Griffith", 
+      coords: {
+          lat: 50.644389,
+          lng: -116.579909
+        },
+      elevation_m: 2742,
+      year: 2025
+      },
+    mount_nanette_bc:{
+      name: "Mount Nanette", 
+      coords: {
+          lat: 50.634556,
+          lng: -116.582532
+        },
+      elevation_m: 2917,
+      year: 2025
+      },
 }
 
   return dataset; 
@@ -1011,10 +1029,11 @@ function statsData(){
     Tent Ridge - 15, 840
     Cathedral Mountain - 20, 1700
     Mount Victoria North Peak - 20, 1700
+    Mt. Griffith, Mt. Nanette - 48, 2200
     */
     2025: {
-      distance_km: 347,
-      vertical_m: 20770,
+      distance_km: 395,
+      vertical_m: 22970,
     },
   }
 
