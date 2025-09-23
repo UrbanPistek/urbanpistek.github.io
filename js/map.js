@@ -973,6 +973,15 @@ function mapData(){
       elevation_m: 2917,
       year: 2025
       },
+    guinns_peak_ab:{
+      name: "Guinn's Peak", 
+      coords: {
+          lat: 50.877479,
+          lng: -115.243471
+        },
+      elevation_m: 2617,
+      year: 2025
+      },
 }
 
   return dataset; 
@@ -1030,10 +1039,11 @@ function statsData(){
     Cathedral Mountain - 20, 1700
     Mount Victoria North Peak - 20, 1700
     Mt. Griffith, Mt. Nanette - 48, 2200
+    Guinns Peak & Spray Valley - 24, 1500
     */
     2025: {
-      distance_km: 395,
-      vertical_m: 22970,
+      distance_km: 419,
+      vertical_m: 24470,
     },
   }
 
