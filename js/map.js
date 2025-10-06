@@ -982,6 +982,15 @@ function mapData(){
       elevation_m: 2617,
       year: 2025
       },
+    whaleback_mountian_bc:{
+      name: "Whaleback Mountain", 
+      coords: {
+          lat: 51.539287, 
+          lng: -116.560526
+        },
+      elevation_m: 2612,
+      year: 2025
+      },
 }
 
   return dataset; 
@@ -1040,10 +1049,11 @@ function statsData(){
     Mount Victoria North Peak - 20, 1700
     Mt. Griffith, Mt. Nanette - 48, 2200
     Guinns Peak & Spray Valley - 24, 1500
+    Stanely Mitchell & Whaleback - 28, 1330
     */
     2025: {
-      distance_km: 419,
-      vertical_m: 24470,
+      distance_km: 447,
+      vertical_m: 25800,
     },
   }
 
