@@ -450,8 +450,8 @@ function mapData(){
       elevation_m: 2862,
       year: 2021
     },
-    mount_forgetmenot_ab:{
-      name: "Mount Forgetmenot", 
+    forgetmenot_ridge_north_summit_ab:{
+      name: "Forgetmenot Ridge North Summit", 
       coords: {
         lat: 50.79531864747603,
         lng: -114.81336887262998
@@ -991,6 +991,24 @@ function mapData(){
       elevation_m: 2612,
       year: 2025
       },
+    forgetmenot_ridge_ab:{
+      name: "Forgetmenot Ridge", 
+      coords: {
+          lat: 50.768295, 
+          lng: -114.804238
+        },
+      elevation_m: 2332,
+      year: 2025
+      },
+    forgetmenot_mountain_ab:{
+      name: "Forgetmenot Mountain", 
+      coords: {
+          lat: 50.752726,  
+          lng: -114.781729,
+        },
+      elevation_m: 2332,
+      year: 2025
+      },
 }
 
   return dataset; 
@@ -1050,10 +1068,11 @@ function statsData(){
     Mt. Griffith, Mt. Nanette - 48, 2200
     Guinns Peak & Spray Valley - 24, 1500
     Stanely Mitchell & Whaleback - 28, 1330
+    Forgetmenot Traverse (North, Ridge, South) - 23, 1100
     */
     2025: {
-      distance_km: 447,
-      vertical_m: 25800,
+      distance_km: 470,
+      vertical_m: 26900,
     },
   }
 
