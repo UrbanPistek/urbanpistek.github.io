@@ -450,8 +450,8 @@ function mapData(){
       elevation_m: 2862,
       year: 2021
     },
-    mount_forgetmenot_ab:{
-      name: "Mount Forgetmenot", 
+    forgetmenot_ridge_north_summit_ab:{
+      name: "Forgetmenot Ridge North Summit", 
       coords: {
         lat: 50.79531864747603,
         lng: -114.81336887262998
@@ -802,7 +802,214 @@ function mapData(){
       elevation_m: 2148,
       year: 2025
       },
-  }
+    snow_dome_ab:{
+      name: "Snow Dome", 
+      coords: {
+          lat: 52.186582,
+          lng: -117.317222
+        },
+      elevation_m: 3456,
+      year: 2025
+      },
+    vinicunca_peru:{
+      name: "Vinicunca", 
+      coords: {
+          lat: -13.867774,
+          lng: -71.303090
+        },
+      elevation_m: 5036,
+      year: 2025
+      },
+    hatun_ritlyoq_peru:{
+      name: "Hutan Rit'lyoq", 
+      coords: {
+          lat: -13.875757,
+          lng: -71.312310
+        },
+      elevation_m: 5069,
+      year: 2025
+      },
+    katunki_peru:{
+      name: "Katunki", 
+      coords: {
+          lat: -13.469366,
+          lng: -71.972831
+        },
+      elevation_m: 4182,
+      year: 2025
+      },
+    chachani_peru:{
+      name: "Chachani", 
+      coords: {
+          lat: -16.195187,
+          lng: -71.532300
+        },
+      elevation_m: 6075,
+      year: 2025
+      },
+    habel_ab:{
+      name: "Mount Habel", 
+      coords: {
+          lat: 51.648702,
+          lng: -116.571132
+        },
+      elevation_m: 3073,
+      year: 2025
+      },
+    tilley_peak_ab:{
+      name: "Tilley Peak", 
+      coords: {
+          lat: 51.671658,
+          lng: -116.588729
+        },
+      elevation_m: 2961,
+      year: 2025
+      },
+    highwood_ridge_ab:{
+      name: "Highwood Ridge", 
+      coords: {
+          lat: 50.588565,
+          lng: -114.992465
+        },
+      elevation_m: 2697,
+      year: 2025
+      },
+    grizzly_ridge_ab:{
+      name: "Grizzly Ridge", 
+      coords: {
+          lat: 50.582420,
+          lng: -115.006180
+        },
+      elevation_m: 2700,
+      year: 2025
+      },
+    mount_tyrwhitt_ab:{
+      name: "Mount Trywhitt", 
+      coords: {
+          lat: 50.582171, 
+          lng: -115.016238
+        },
+      elevation_m: 2874,
+      year: 2025
+      },
+    volcano_ridge_ab:{
+      name: "Volcano Ridge", 
+      coords: {
+          lat: 50.708419,
+          lng: -114.711286
+        },
+      elevation_m: 2127,
+      year: 2025
+      },
+    south_volcano_ridge_ab:{
+      name: "South Volcano Ridge", 
+      coords: {
+          lat: 50.691296,
+          lng: -114.705579
+        },
+      elevation_m: 1950,
+      year: 2025
+      },
+    mount_aberdeen_ab:{
+      name: "Mount Aberdeen", 
+      coords: {
+          lat: 51.378729,
+          lng: -116.246586,
+        },
+      elevation_m: 3150,
+      year: 2025
+      },
+    haddo_peak_ab:{
+      name: "Haddo Peak", 
+      coords: {
+          lat: 51.381678,
+          lng: -116.235599
+        },
+      elevation_m: 3070,
+      year: 2025
+      },
+    tent_ridge_ab:{
+      name: "Tent Ridge", 
+      coords: {
+          lat: 50.820273,
+          lng: -115.373670
+        },
+      elevation_m: 2545,
+      year: 2025
+      },
+    cathedral_mountain_bc:{
+      name: "Cathedral Mountain", 
+      coords: {
+          lat: 51.396524,
+          lng: -116.389994
+        },
+      elevation_m: 3189,
+      year: 2025
+      },
+    mount_victoria_north_peak_bc:{
+      name: "Mount Victoria North Peak", 
+      coords: {
+          lat: 51.384961,
+          lng: -116.312689
+        },
+      elevation_m: 3388,
+      year: 2025
+      },
+    mount_griffith_bc:{
+      name: "Mount Griffith", 
+      coords: {
+          lat: 50.644389,
+          lng: -116.579909
+        },
+      elevation_m: 2742,
+      year: 2025
+      },
+    mount_nanette_bc:{
+      name: "Mount Nanette", 
+      coords: {
+          lat: 50.634556,
+          lng: -116.582532
+        },
+      elevation_m: 2917,
+      year: 2025
+      },
+    guinns_peak_ab:{
+      name: "Guinn's Peak", 
+      coords: {
+          lat: 50.877479,
+          lng: -115.243471
+        },
+      elevation_m: 2617,
+      year: 2025
+      },
+    whaleback_mountian_bc:{
+      name: "Whaleback Mountain", 
+      coords: {
+          lat: 51.539287, 
+          lng: -116.560526
+        },
+      elevation_m: 2612,
+      year: 2025
+      },
+    forgetmenot_ridge_ab:{
+      name: "Forgetmenot Ridge", 
+      coords: {
+          lat: 50.768295, 
+          lng: -114.804238
+        },
+      elevation_m: 2332,
+      year: 2025
+      },
+    forgetmenot_mountain_ab:{
+      name: "Forgetmenot Mountain", 
+      coords: {
+          lat: 50.752726,  
+          lng: -114.781729,
+        },
+      elevation_m: 2332,
+      year: 2025
+      },
+}
 
   return dataset; 
 }
@@ -846,10 +1053,26 @@ function statsData(){
     Cox Hill - 13, 780
     Grant MacEwan Peak - 12, 1060
     Balu Pass - 12, 850
+    Snow Dome - 22, 1500
+    Vinicunca + Hutan Rit'lyoq - 10, 600
+    Katunki - 22, 1040
+    Chachani - 9, 1000
+    Salkantay - 79, 2800
+    Habel + Tilley - 33, 2700
+    Highwood + Grizzly + Tyrwhitt - 9, 1000
+    Volcano Ridge + South - 17, 800
+    Aberdeen + Haddo - 54, 2400
+    Tent Ridge - 15, 840
+    Cathedral Mountain - 20, 1700
+    Mount Victoria North Peak - 20, 1700
+    Mt. Griffith, Mt. Nanette - 48, 2200
+    Guinns Peak & Spray Valley - 24, 1500
+    Stanely Mitchell & Whaleback - 28, 1330
+    Forgetmenot Traverse (North, Ridge, South) - 23, 1100
     */
     2025: {
-      distance_km: 37,
-      vertical_m: 2690,
+      distance_km: 470,
+      vertical_m: 26900,
     },
   }
 
