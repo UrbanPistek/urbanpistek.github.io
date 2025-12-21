@@ -35,15 +35,3 @@ jobs:
         run: |
           chmod +x ./inject_ENV.sh
           ./inject_ENV.sh
-      
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'  # or './dist' if your build script outputs to a specific directory
-      
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
