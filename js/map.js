@@ -54,7 +54,6 @@ function displayMountains(map){
 function mountainCount(){
   let data = mapData();
   var count =  Object.keys(data).length;
-  console.log("Mountain count: ", count);
   return count;
 }
 
@@ -1069,10 +1068,11 @@ function statsData(){
     Guinns Peak & Spray Valley - 24, 1500
     Stanely Mitchell & Whaleback - 28, 1330
     Forgetmenot Traverse (North, Ridge, South) - 23, 1100
+    Surprise Pass Ski Tour - 11, 900
     */
     2025: {
-      distance_km: 470,
-      vertical_m: 26900,
+      distance_km: 481,
+      vertical_m: 27800,
     },
   }
 
