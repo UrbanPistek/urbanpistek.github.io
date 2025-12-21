@@ -81,8 +81,7 @@ function init(container, len, height, distance){
 
 function render_hypermesh(container, len, height, defaultRotation, distance, defaultAngle){
 
-    console.log("Hypermesh", len, height, defaultRotation, distance, defaultAngle);
-
+    // console.log("Hypermesh", len, height, defaultRotation, distance, defaultAngle);
     const fps = 60;
     init(container, len, height, distance);
 

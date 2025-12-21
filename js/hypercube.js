@@ -64,8 +64,7 @@ function hc_init(container, len, height, distance){
 
 function render_hypercube(container, len, height, hc_defaultRotation, distance, hc_defaultAngle){
 
-    console.log("Hypercube", len, height, hc_defaultRotation, distance, hc_defaultAngle);
-
+    // console.log("Hypercube", len, height, hc_defaultRotation, distance, hc_defaultAngle);
     const fps = 60;
     hc_init(container, len, height, distance);
 
