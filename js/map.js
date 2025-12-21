@@ -590,15 +590,42 @@ function mapData(){
       elevation_m: 3139,
       year: 2023
       },
-    burroughs_mountain_wa:{
-      name: "Burroughs Mountain", 
+    mist_mountain_outlier_ab:{
+      name: "Mist Mountain Outlier", 
+      coords: {
+          lat: 50.551327, 
+          lng: -114.902508
+        },
+      elevation_m: 3040,
+      year: 2023
+    },
+    burroughs_mountain_1_wa:{
+      name: "1st Burroughs Mountain", 
+      coords: {
+          lat: 46.911897, 
+          lng: -121.674397
+        },
+      elevation_m: 2182,
+      year: 2023
+      },
+    burroughs_mountain_2_wa:{
+      name: "2nd Burroughs Mountain", 
+      coords: {
+          lat: 46.906479, 
+          lng: -121.689527
+        },
+      elevation_m: 2256,
+      year: 2023
+    },
+    burroughs_mountain_3_wa:{
+      name: "3rd Burroughs Mountain", 
       coords: {
           lat: 46.901713,
           lng: -121.713637
         },
       elevation_m: 2380,
       year: 2023
-      },
+    },
     crescent_spire_bc:{
       name: "Crescent Spire", 
       coords: {
@@ -797,16 +824,24 @@ function mapData(){
       elevation_m: 3028,
       year: 2024
       },
-
+    cox_hill_ne_ab:{
+      name: "Cox Hill NE Summit", 
+      coords: {
+          lat: 50.992402,
+          lng: -114.899321
+        },
+      elevation_m: 2193,
+      year: 2025
+    },
     cox_hill_ab:{
       name: "Cox Hill", 
       coords: {
           lat: 50.990150,
           lng: -114.906649
         },
-      elevation_m: 2190,
+      elevation_m: 2211,
       year: 2025
-      },
+    },
     grant_macewan_ab:{
       name: "Grant MacEwan Peak", 
       coords: {
