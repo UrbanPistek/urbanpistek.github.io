@@ -27,6 +27,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+    <!-- Load config first, then your map script -->
+  <script src="config.js"></script>
   <script src="./js/map.js"></script>
   <script src="./node_modules/3d-force-graph/dist/3d-force-graph.js"></script>
 
@@ -1355,13 +1357,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <script
-    src='https://maps.googleapis.com/maps/api/js?key=__MAP_API_KEY__&callback=initMap'
-    async>
-  </script>
-
   <script>
-    console.log("Injection ENV TEST Key: __INJECTION_ENV_TEST_KEY__")
+    console.log("Injection ENV TEST Key: ")
   </script>
 
   <script src="js/three.js"></script>
