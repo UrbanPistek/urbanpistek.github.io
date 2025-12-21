@@ -27,10 +27,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- Load config first, then your map script -->
-  <script src="config.js"></script>
-  <script src="./js/map.js"></script>
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZP3M1706F"></script>
   <script>
@@ -40,6 +36,15 @@
 
     gtag('config', 'G-8ZP3M1706F');
   </script>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 600px;
+      width: 100%;
+    }
+  </style>
 
 </head>
 
@@ -1356,8 +1361,12 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-    console.log("Injection ENV TEST Key: ")
+    console.log("Injection ENV TEST Key: __INJECTION_ENV_TEST_KEY__")
   </script>
+
+  <!-- Load config first, then your map script -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="./js/map.js"></script>
 
   <script src="js/three.js"></script>
   <script src="js/hypercube.js"></script>

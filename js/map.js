@@ -1,32 +1,40 @@
-function loadGoogleMaps() {
+function loadOpenStreetMap() {
+  // Load Leaflet CSS
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css';
+  document.head.appendChild(link);
+  
+  // Load Leaflet JS
   const script = document.createElement('script');
-  script.src = `https://maps.googleapis.com/maps/api/js?key=${window.ENV.GOOGLE_MAPS_API_KEY}&callback=initMap`;
+  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js';
   script.async = true;
-  script.defer = true;
+  script.onload = initMap;
   document.head.appendChild(script);
 }
 
 // Initialize and add the map
 function initMap() {
-
   // Center Point
-  const center = { lat: 42.666318, lng:  -108.023603 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 2, // 0 is no zoom
+  const center = [42.666318, -108.023603]; // Note: Leaflet uses [lat, lng] format
+  
+  // The map, centered at your location
+  const map = L.map('map', {
     center: center,
-    mapTypeId: 'terrain',
-    streetViewControl: false,
-    options: {
-      gestureHandling: 'greedy'
-    }
+    zoom: 2,
+    scrollWheelZoom: true // equivalent to gestureHandling: 'greedy'
   });
+
+  // Add OpenStreetMap tile layer
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 19
+  }).addTo(map);
 
   displayMountains(map);
 }
 
 function displayMountains(map){
-
   let data = mapData();
 
   for(const item in data){
@@ -37,27 +45,26 @@ function displayMountains(map){
       <p><strong>Summit Year</strong>: ${String(data[item].year)}</p>
     </div>
     `;
-    const infowindow = new google.maps.InfoWindow({
-      content: displayContent,
+
+    // Create custom icon
+    const customIcon = L.icon({
+      iconUrl: 'assets/img/map_icon2.png',
+      iconSize: [32, 32], // Adjust size as needed
+      iconAnchor: [16, 32], // Point of the icon which will correspond to marker's location
+      popupAnchor: [0, -32] // Point from which the popup should open relative to the iconAnchor
     });
 
-    const marker = new google.maps.Marker({
-      position: data[item].coords,
-      map: map,
-      icon: "assets/img/map_icon2.png",
+    // Create marker with custom icon
+    const marker = L.marker([data[item].coords.lat, data[item].coords.lng], {
+      icon: customIcon,
       title: data[item].name
-    });
+    }).addTo(map);
 
-    marker.addListener("click", () => {
-      infowindow.open({
-        anchor: marker,
-        map,
-        shouldFocus: false,
-      });
-    });
-
+    // Add popup (equivalent to InfoWindow)
+    marker.bindPopup(displayContent);
   }
 }
+
 
 function mountainCount(){
   let data = mapData();
@@ -1088,4 +1095,4 @@ function statsData(){
 }
 
 // Load the map when the page is ready
-loadGoogleMaps();
+loadOpenStreetMap();

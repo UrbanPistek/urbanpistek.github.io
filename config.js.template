@@ -1,3 +1,0 @@
-window.ENV = {
-  GOOGLE_MAPS_API_KEY: '__MAP_API_KEY__'
-};

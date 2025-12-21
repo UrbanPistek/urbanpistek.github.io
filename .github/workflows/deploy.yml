@@ -46,7 +46,6 @@ jobs:
       
       - name: Inject environment variables
         env:
-          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
           INJECTION_ENV_TEST_KEY: ${{ vars.INJECTION_ENV_TEST_KEY }}
           # Add other secrets here
         run: ./inject_ENV.sh
