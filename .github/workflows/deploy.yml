@@ -23,15 +23,20 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
+    defaults:
+      run:
+        working-directory: .
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+
+      - name: Make the script files executable
+        run: chmod +x ./inject_ENV.sh
       
       - name: Inject environment variables
         env:
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
           # Add other secrets here
-        run: |
-          chmod +x ./inject_ENV.sh
-          ./inject_ENV.sh
+        run: ./inject_ENV.sh
