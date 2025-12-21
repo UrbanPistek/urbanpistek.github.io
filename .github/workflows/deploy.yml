@@ -37,11 +37,16 @@ jobs:
 
       - name: Make the script files executable
         run: chmod +x ./inject_ENV.sh
+
+      - name: Use variables
+        env:
+          INJECTION_ENV_TEST_KEY: ${{ vars.INJECTION_ENV_TEST_KEY }}
+        run: echo "repository variable : $INJECTION_ENV_TEST_KEY"
       
       - name: Inject environment variables
         env:
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
-          INJECTION_ENV_TEST_KEY: ${{ secrets.INJECTION_ENV_TEST_KEY }}
+          INJECTION_ENV_TEST_KEY: ${{ vars.INJECTION_ENV_TEST_KEY }}
           # Add other secrets here
         run: ./inject_ENV.sh
 
