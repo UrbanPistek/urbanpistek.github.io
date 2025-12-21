@@ -41,7 +41,8 @@ jobs:
       - name: Use variables
         env:
           INJECTION_ENV_TEST_KEY: ${{ vars.INJECTION_ENV_TEST_KEY }}
-        run: echo "repository variable : $INJECTION_ENV_TEST_KEY"
+        run: |
+          echo "repository variable : $INJECTION_ENV_TEST_KEY"
       
       - name: Inject environment variables
         env:
