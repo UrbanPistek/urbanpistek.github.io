@@ -1058,6 +1058,24 @@ function mapData(){
       elevation_m: 2332,
       year: 2025
       },
+    little_crowfoot_ab:{
+      name: "Little Crowfoot", 
+      coords: {
+          lat: 51.62882,
+          lng: -116.45901,
+        },
+      elevation_m: 2820,
+      year: 2026
+      },
+    crowfoot_mountain_ab:{
+      name: "Crowfoot Mountain", 
+      coords: {
+          lat: 51.62514,
+          lng: -116.43351,
+        },
+      elevation_m: 3050,
+      year: 2026
+      },
 }
 
   return dataset; 
@@ -1119,10 +1137,20 @@ function statsData(){
     Stanely Mitchell & Whaleback - 28, 1330
     Forgetmenot Traverse (North, Ridge, South) - 23, 1100
     Surprise Pass Ski Tour - 11, 900
+    Bow Hut Trip x2 - 25, 1250 
     */
     2025: {
-      distance_km: 481,
-      vertical_m: 27800,
+      distance_km: 506,
+      vertical_m: 29050,
+    },
+
+    /*
+    Little Crowfoot - 8, 775
+    Crowfoot Mountain - 13, 1250
+    */
+    2026: {
+      distance_km: 21,
+      vertical_m: 2025,
     },
   }
 
