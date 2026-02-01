@@ -1076,6 +1076,15 @@ function mapData(){
       elevation_m: 3050,
       year: 2026
       },
+    chickadee_peak_bc:{
+      name: "Chickadee Peak", 
+      coords: {
+          lat: 51.26052,
+          lng: -116.13475
+        },
+      elevation_m: 2811,
+      year: 2026
+      },
 }
 
   return dataset; 
@@ -1147,10 +1156,11 @@ function statsData(){
     /*
     Little Crowfoot - 8, 775
     Crowfoot Mountain - 13, 1250
+    Chickadee Peak - 17, 1200
     */
     2026: {
-      distance_km: 21,
-      vertical_m: 2025,
+      distance_km: 38,
+      vertical_m: 3225,
     },
   }
 
