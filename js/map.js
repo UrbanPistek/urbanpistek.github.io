@@ -1085,6 +1085,24 @@ function mapData(){
       elevation_m: 2811,
       year: 2026
       },
+    scout_peak_ca:{
+      name: "Scout Peak", 
+      coords: {
+          lat: 36.47981, 
+          lng: -121.19963
+        },
+      elevation_m: 794,
+      year: 2026
+      },
+    north_chalone_peak_ca:{
+      name: "North Chalone Peak", 
+      coords: {
+          lat: 36.44761,
+          lng: -121.19566
+        },
+      elevation_m: 1007,
+      year: 2026
+      },
 }
 
   return dataset; 
@@ -1157,10 +1175,12 @@ function statsData(){
     Little Crowfoot - 8, 775
     Crowfoot Mountain - 13, 1250
     Chickadee Peak - 17, 1200
+    Scout Peak - 11, 650
+    North Chalone Peak - 14, 700 
     */
     2026: {
-      distance_km: 38,
-      vertical_m: 3225,
+      distance_km: 63,
+      vertical_m: 4575,
     },
   }
 
