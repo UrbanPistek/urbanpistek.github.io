@@ -1103,6 +1103,24 @@ function mapData(){
       elevation_m: 1007,
       year: 2026
       },
+    lipalian_mountain_ab:{
+      name: "Lipalian Mountain", 
+      coords: {
+          lat: 51.42706,
+          lng: -116.09732,
+        },
+      elevation_m: 2710,
+      year: 2026
+      },
+    purple_mound_ab:{
+      name: "Purple Mound", 
+      coords: {
+          lat: 51.43228,
+          lng: -116.08458,
+        },
+      elevation_m: 2622,
+      year: 2026
+      },
 }
 
   return dataset; 
@@ -1177,10 +1195,12 @@ function statsData(){
     Chickadee Peak - 17, 1200
     Scout Peak - 11, 650
     North Chalone Peak - 14, 700 
+    Tent Ridge - 8, 800
+    Lipalian & Purple - 12, 700
     */
     2026: {
-      distance_km: 63,
-      vertical_m: 4575,
+      distance_km: 83,
+      vertical_m: 6075,
     },
   }
 
