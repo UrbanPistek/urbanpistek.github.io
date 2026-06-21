@@ -1121,6 +1121,15 @@ function mapData(){
       elevation_m: 2622,
       year: 2026
       },
+    mount_baldy_ab:{
+      name: "Mount Baldy", 
+      coords: {
+          lat: 51.01254,
+          lng: -115.04997,
+        },
+      elevation_m: 2192,
+      year: 2026
+      },
 }
 
   return dataset; 
@@ -1197,10 +1206,11 @@ function statsData(){
     North Chalone Peak - 14, 700 
     Tent Ridge - 8, 800
     Lipalian & Purple - 12, 700
+    Baldy Traverse - 8, 1000
     */
     2026: {
-      distance_km: 83,
-      vertical_m: 6075,
+      distance_km: 91,
+      vertical_m: 7075,
     },
   }
 
