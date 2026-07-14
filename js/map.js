@@ -25,10 +25,10 @@ function initMap() {
     scrollWheelZoom: true // equivalent to gestureHandling: 'greedy'
   });
 
-  // Add OpenStreetMap tile layer
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    maxZoom: 19
+  // Add OpenTopoMap terrain tile layer
+  L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org">CC-BY-SA</a>)'
   }).addTo(map);
 
   displayMountains(map);
@@ -1130,6 +1130,33 @@ function mapData(){
       elevation_m: 2192,
       year: 2026
       },
+    buchanan_ridge_ab:{
+      name: "Buchanan Ridge", 
+      coords: {
+          lat: 49.04028, 
+          lng: -113.98581,
+        },
+      elevation_m: 2409,
+      year: 2026
+      },
+    buchanan_peak_ab:{
+      name: "Buchanan Peak", 
+      coords: {
+          lat: 49.04473,
+          lng: -113.99873,
+        },
+      elevation_m: 2565,
+      year: 2026
+      },
+    mount_carthew_ab:{
+      name: "Mount Carthew", 
+      coords: {
+          lat: 49.03186, 
+          lng: -114.00156,
+        },
+      elevation_m: 2587,
+      year: 2026
+      },
 }
 
   return dataset; 
@@ -1207,10 +1234,12 @@ function statsData(){
     Tent Ridge - 8, 800
     Lipalian & Purple - 12, 700
     Baldy Traverse - 8, 1000
+    Cascade Trail Run - 48, 1400
+    Buchanan, Carthew - 26, 1925
     */
     2026: {
-      distance_km: 91,
-      vertical_m: 7075,
+      distance_km: 165,
+      vertical_m: 10400,
     },
   }
 
