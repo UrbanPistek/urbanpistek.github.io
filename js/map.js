@@ -1157,6 +1157,24 @@ function mapData(){
       elevation_m: 2587,
       year: 2026
       },
+    cowboy_ridge_bc:{
+      name: "Cowboy Ridge", 
+      coords: {
+          lat: 50.02617, 
+          lng: -122.86938,
+        },
+      elevation_m: 2026,
+      year: 2026
+      },
+    nigel_peak_ab:{
+      name: "Nigel Peak", 
+      coords: {
+          lat: 52.23940,
+          lng: -117.17189,
+        },
+      elevation_m: 3211,
+      year: 2026
+      },
 }
 
   return dataset; 
@@ -1236,10 +1254,12 @@ function statsData(){
     Baldy Traverse - 8, 1000
     Cascade Trail Run - 48, 1400
     Buchanan, Carthew - 26, 1925
+    Garibaldi - 37, 2000
+    Nigel - 11, 1200
     */
     2026: {
-      distance_km: 165,
-      vertical_m: 10400,
+      distance_km: 213,
+      vertical_m: 13600,
     },
   }
 
