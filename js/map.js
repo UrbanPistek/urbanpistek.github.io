@@ -1175,6 +1175,15 @@ function mapData(){
       elevation_m: 3211,
       year: 2026
       },
+    cascade_mountain_ab:{
+      name: "Cascade Mountain", 
+      coords: {
+          lat: 51.22910,
+          lng: -115.56319,
+        },
+      elevation_m: 3006,
+      year: 2026
+      },
 }
 
   return dataset; 
@@ -1256,10 +1265,13 @@ function statsData(){
     Buchanan, Carthew - 26, 1925
     Garibaldi - 37, 2000
     Nigel - 11, 1200
+    Temple - 17, 1700
+    Rockwall - 56, 2600
+    Cascade - 20, 1600
     */
     2026: {
-      distance_km: 213,
-      vertical_m: 13600,
+      distance_km: 306,
+      vertical_m: 19500,
     },
   }
 
