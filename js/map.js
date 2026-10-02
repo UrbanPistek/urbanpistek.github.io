@@ -824,6 +824,15 @@ function mapData(){
       elevation_m: 3028,
       year: 2024
       },
+    the_pterodactyl_bc:{
+      name: "The Pterodactyl", 
+      coords: {
+          lat: 51.21261,
+          lng: -117.46325
+        },
+      elevation_m: 2302,
+      year: 2024
+    },
     cox_hill_ne_ab:{
       name: "Cox Hill NE Summit", 
       coords: {
