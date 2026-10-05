@@ -1193,6 +1193,15 @@ function mapData(){
       elevation_m: 3006,
       year: 2026
       },
+    perley_rock_bc:{
+      name: "Perley Rock", 
+      coords: {
+          lat: 51.24853, 
+          lng: -117.44207,
+        },
+      elevation_m: 2392,
+      year: 2026
+      },
 }
 
   return dataset; 
@@ -1277,10 +1286,11 @@ function statsData(){
     Temple - 17, 1700
     Rockwall - 56, 2600
     Cascade - 20, 1600
+    Perley Rock - 13, 1300
     */
     2026: {
-      distance_km: 306,
-      vertical_m: 19500,
+      distance_km: 319,
+      vertical_m: 20800,
     },
   }
 
