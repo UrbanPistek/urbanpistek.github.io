@@ -1,0 +1,106 @@
+\ProvidesPackage{simplecv}
+
+%% ======================================================================
+%%  simplecv.sty  --  Minimal resume style
+%%
+%%  Loads packages, defines colours, the section title style, list/item
+%%  shortcuts and contact-link commands.
+%%
+%%  NOTE: load this package AFTER defining \theme (see main.tex), because
+%%  the colour \color-title is built from \theme.
+%% ======================================================================
+
+% ---------- Packages ----------
+\usepackage[hidelinks]{hyperref}            % clickable links; hides link boxes
+\usepackage{titlesec}                       % section title formatting
+\usepackage{import}                         % \import{path}{file} for section files
+\usepackage[usenames,dvipsnames]{xcolor}    % named colours (e.g. MidnightBlue)
+\usepackage{enumitem}                       % list customisation (margins, spacing)
+\usepackage[english]{babel}                 % English hyphenation rules
+
+% ---------- Page style ----------
+% Clean resume look: no header, no footer and no page numbers.
+\pagestyle{empty}
+\urlstyle{same}                             % URLs in the same font as the text
+\raggedbottom                               % do not stretch vertical space
+\raggedright                                % left-aligned text (no full justification)
+\setlength{\tabcolsep}{0in}                 % remove table padding (used by \entrybig)
+
+% ---------- Colours ----------
+\definecolor{color-text}{gray}{0.10}        % near-black body text
+\definecolor{color-detail}{gray}{0.20}      % dark gray for secondary text
+\colorlet{color-title}{\theme}              % section/heading colour; \theme is set in main.tex
+
+% Apply the body text colour from the very start of the document
+\makeatletter
+\newcommand{\globalcolor}[1]{\color{#1}\global\let\default@color\current@color}
+\makeatother
+\AtBeginDocument{\globalcolor{color-text}}
+
+% ---------- Inline header: name (left) + contact info (right) ----------
+% \headinginline{<name>}{<contact lines>}
+%   <name>     : large name on the left
+%   <contact>  : right-aligned contact details (website, email, LinkedIn, GitHub)
+\newcommand{\headinginline}[2]{
+    \begin{minipage}[t]{0.60\textwidth}
+    \fontfamily{put} \selectfont          % Utopia font for the name
+    \vspace*{\fill}
+    \Huge \textcolor{color-title}{#1}     % the name
+    \end{minipage}
+    \begin{minipage}[t]{0.35\textwidth}
+    \begin{flushright}
+    #2                                    % contact details
+    \end{flushright}
+    \end{minipage}
+}
+
+% ---------- Section titles ----------
+% Numberless, coloured section titles with a coloured rule underneath.
+\titleformat{\section}{
+    \bfseries\raggedright\Large\color{color-title}
+}{}{0em}{}[\color{color-title}\titlerule]
+% left indent | space before section | space after section
+\titlespacing{\section}{0pt}{0.75em}{0.75em}
+
+% ---------- Lists ----------
+% \outerlist{...}      : bulleted list, flush to the left margin
+% \denseouterlist{...} : same as \outerlist but tighter (no space between items)
+% \innerlist{...}      : indented sub-list with no extra top padding
+\newcommand{\outerlist}[1]{
+    \begin{itemize}[leftmargin=0pt] #1 \end{itemize}}
+\newcommand{\denseouterlist}[1]{
+    \begin{itemize}[leftmargin=*,itemsep=0pt] #1 \end{itemize}}
+\newcommand{\innerlist}[1]{
+    \begin{itemize}[topsep=0pt] #1 \end{itemize}}
+
+% For projects section
+% \entryproject{<title>}{<skills>}{<description>}
+%   title        : bold, left on row 1
+%   skills       : right-aligned on row 1
+%   description  : full-width wrapping paragraph below
+\newcommand{\entryproject}[3]{%
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\ \end{tabular*} \\[2pt]
+    {\small #3} \\[8pt]
+}
+
+% \plainlist{...} : wraps content with no bullets, no labels
+\newcommand{\plainlist}[1]{#1}
+
+% ---------- List items ----------
+% \entry{<text>}        : bulleted item in small font
+% \entryextra{<text>}   : bulleted item in small font, coloured dark gray
+% \entrybig[<label>]{<left>}{<right>}{<detail 1>}{<detail 2>}
+%                     : two-row table row; left/right on line 1, details on line 2
+\newcommand{\entry}[1]{\item\small{#1}}
+\newcommand{\entryextra}[1]{\textcolor{color-detail}{\entry{#1}}}
+\newcommand{\entrybig}[5][]{\item[#1]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    #2 & #3 \\ {\small#4} & {\small #5} \\ \end{tabular*}
+}
+
+% ---------- Contact-link shortcuts ----------
+\newcommand{\github}[1]{\href{https://github.com/#1/}{github.com/#1}}
+\newcommand{\email}[1]{\href{mailto:#1}{#1}}
+\newcommand{\website}[1]{\href{https://#1/}{#1}}
+\newcommand{\linkedin}[1]{\href{https://www.linkedin.com/in/#1/}{#1}}

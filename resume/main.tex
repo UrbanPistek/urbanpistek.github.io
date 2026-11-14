@@ -1,40 +1,47 @@
+% ---------- A conscise single page resume ----------
+% This is the primary resume to reference
+\documentclass[11pt]{article}
 
-\documentclass[10pt]{article}
-%\usepackage{hyperref}
+% ---------- Page geometry ----------
+% A4 paper with narrow margins so content runs close to the edge of the page.
 \usepackage{geometry}
- \geometry{
- a4paper,
- total={210mm,297mm},
- left=7.5mm,
- top=7.5mm,
- right=7.5mm, 
- bottom=5mm
+\geometry{
+    a4paper,
+    left=7.5mm,
+    right=7.5mm,
+    top=7.5mm,
+    bottom=5mm
 }
 
-% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
-% \def\theme{MidnightBlue}
+% ---------- Theme ----------
+% Accent colour used for section titles and the header name.
+% Must be defined BEFORE \usepackage{simplecv} (simplecv builds \color-title from \theme).
+% Options: black, RedViolet, ForestGreen, MidnightBlue, ...
 \def\theme{MidnightBlue}
-% For more, see https://en.wikibooks.org/wiki/LaTeX/Colors
 
+% ---------- Resume style ----------
+% Defines colours, the section format, list/item commands and contact shortcuts.
 \usepackage{simplecv}
-
-\boldname{Surname}{Name}{N.}
 
 \begin{document}
 
-% Heading
+% ---------- Header ----------
+% \headinginline{<name>}{<contact lines>}
+%   <name>     : large name on the left
+%   <contact>  : right-aligned contact details (website, email, LinkedIn, GitHub)
 \headinginline{Urban Pistek}{
-    \textbf{Website}: \href{www.urbanpistek.com}{urbanpistek.com} \\ 
+    \textbf{Website}: \href{www.urbanpistek.com}{urbanpistek.com} \\
     \textbf{Email}: \email{urban.pistek@gmail.com} \\
     \textbf{LinkedIn}: \linkedin{urbanpistek} \\
     \textbf{GitHub}: \github{UrbanPistek} \\
-    %\textbf{GitLab}: \href{https://gitlab.com/Urban_Pistek}{gitlab.com/Urban\_Pistek}
 }
 
-% Page One
+% ---------- Page One: Education & Experience ----------
+\import{sections/}{education.tex}
 \import{sections/}{experience.tex}
+
+% ---------- Page Two: Projects & Skills ----------
 \import{sections/}{projects.tex}
 \import{sections/}{skills.tex}
-\import{sections/}{education.tex}
 
 \end{document}

@@ -2,3 +2,17 @@ node_modules
 assets_backup
 .env
 config.js
+
+# Latex specific outputs
+resume_full/main.fls
+resume_full/main.aux
+resume_full/main.log
+resume_full/main.out
+resume_full/main.synctex.gz
+resume_full/main.fdb_latexmk
+resume/main.fls
+resume/main.aux
+resume/main.log
+resume/main.out
+resume/main.synctex.gz
+resume/main.fdb_latexmk
